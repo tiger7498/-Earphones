@@ -1,0 +1,53 @@
+/* Основные настройки */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Цвета */
+:root {
+  --primary: #FF9F7B; /* Оранжевый */
+  --secondary: #B08BBB; /* Фиолетовый */
+  --light: #F5F5F5;
+}
+
+/* Шапка */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: var(--light);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cta {
+  background: var(--secondary);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Адаптация под мобильные */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
